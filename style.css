@@ -1,0 +1,181 @@
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #1A4A5A;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+
+/* Main Styles */
+
+.hero {
+  background-color: #C1E1A7;
+  color: #1A4A5A;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.features {
+  background-color: #EFBC75;
+  padding: 100px 0;
+}
+
+.features h3 {
+  margin-top: 0;
+}
+
+.card-flip {
+  position: relative;
+  height: 300px;
+  cursor: pointer;
+}
+
+.card-flip .card-front,
+.card-flip .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: transform 0.5s;
+  backface-visibility: hidden;
+}
+
+.card-flip .card-front {
+  background-color: #148D8D;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-flip .card-back {
+  background-color: #1A4A5A;
+  color: #fff;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-front {
+  transform: rotateY(180deg);
+}
+
+.card-flip:hover .card-back {
+  transform: rotateY(0deg);
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #1A4A5A;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Social icons in footer styling*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  color: #aaa;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-inline-item {
+  display: inline-block;
+}
+.list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
