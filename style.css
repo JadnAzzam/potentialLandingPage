@@ -86,6 +86,8 @@ nav a {
   position: relative;
   height: 300px;
   cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-flip .card-front,
@@ -97,7 +99,10 @@ nav a {
   bottom: 0;
   transition: transform 0.5s;
   backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .card-flip .card-front {
   background-color: #148D8D;
